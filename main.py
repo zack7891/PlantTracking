@@ -81,9 +81,6 @@ if not Path(csv_file_path).exists():
 app = tk.Tk()
 app.title("Plant Recorder")
 
-# Change the application icon
-app.iconbitmap('C:/Users/18137/Sprout-595b40b65ba036ed117d3411.png')  # Path to your icon file
-
 # Application title label
 tk.Label(app, text="Plant Recorder Application").grid(row=0, column=0, columnspan=3, padx=10, pady=10, sticky='we')
 
@@ -107,7 +104,7 @@ view_button = tk.Button(app, text="View Plants", command=view_plants)
 view_button.grid(row=4, column=2, padx=10, pady=10, sticky='w')
 
 # Load and add a static picture of a plant
-plant_image = PhotoImage(file='C:/Users/18137/Sprout-595b40b65ba036ed117d3411.png')
+plant_image = PhotoImage(file='Sprout-595b40b65ba036ed117d3411.png')
 image_label = tk.Label(app, image=plant_image)
 image_label.grid(row=0, column=0, rowspan=4, padx=10, pady=10, sticky='ns')  # Span multiple rows to align with the input fields
 
